@@ -1,0 +1,11 @@
+* {
+    padding: 0; /* Sempre começar tirando padding e margin*/
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    padding-bottom: 250px;
+    background-image: url("../public/fundo.jpg");
+    background-size: cover;
+  }
