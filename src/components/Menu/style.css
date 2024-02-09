@@ -1,121 +1,168 @@
 header {
-    background-color: rgb(5, 5, 5);
-    border: solid 2px black;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
-    align-items: center; 
-    width: 100%;
-  
-  }
+  background-color: rgb(5, 5, 5);
+  border: solid 2px black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center; 
+  width: 100%;
+
+}
 
 .menu-toggle{
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
 }
 
 .titulo{
-    color: white;
-    font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-  }
-  
+  color: white;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
 .menu{
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+
 }
 
 .menu a {
-  text-decoration: none; 
-  color: #fff;
-  transition: transform 0.3s ease-out;
+text-decoration: none; 
+color: #fff;
+transition: transform 0.3s ease-out;
 }
 
 .menu a:hover{
-  transform: scale(1.2);
-  color: yellow
+transform: scale(1.2);
+color: yellow
 }
 
 
 @media screen and (max-width: 320px) {
-  .menu {
-    display: none; /* Oculta o menu em telas menores */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-  }
+.menu {
+  display: none; /* Oculta o menu em telas menores */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
 
 
 .menu.active {
-    display: flex; /* Mostra o menu quando a classe active é adicionada */
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 10rem
-    
-  }
+  display: flex; /* Mostra o menu quando a classe active é adicionada */
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10rem
+  
+}
 
 .menu-toggle {
-    display: block; /* Mostra o ícone de menu em telas menores */
-    color: aliceblue;
-    font-size: 20px;
-    
-
-  }
-  .titulo{
-    color: white;
-    font-size: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-  }
-
-  .menu a {
-    display: flex;
-    justify-content: center;
-    
-    
-  }
+  display: block; /* Mostra o ícone de menu em telas menores */
+  color: aliceblue;
+  font-size: 20px;
   
+
+}
+.titulo{
+  color: white;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+
+}
+
+@media screen and (max-width: 375px) {
+.menu {
+  display: none; /* Oculta o menu em telas menores */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+
+.menu.active {
+  display: flex; /* Mostra o menu quando a classe active é adicionada */
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10rem
+  
+}
+
+.menu-toggle {
+  display: block; /* Mostra o ícone de menu em telas menores */
+  color: aliceblue;
+  font-size: 20px;
+  
+
+}
+.titulo{
+  color: white;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
 
 }
 
 
 @media screen and (max-width: 768px) {
-  .titulo{
-    color: white;
-    font-size: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-  }
+.titulo{
+  color: white;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
 
-  .menu {
-    display: none; /* Oculta o menu em telas menores */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    top: 80px;
-  }
+.menu {
+  display: none; /* Oculta o menu em telas menores */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  top: 80px;
+}
 
 
 .menu.active {
-    display: flex; /* Mostra o menu quando a classe active é adicionada */
-  }
+  display: flex; /* Mostra o menu quando a classe active é adicionada */
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10rem
+  
+}
 
 
 .menu-toggle {
-    display: block; /* Mostra o ícone de menu em telas menores */
-    color: aliceblue;
-    font-size: 30px;
-  }
+  display: block; /* Mostra o ícone de menu em telas menores */
+  color: aliceblue;
+  font-size: 30px;
+}
 
 .menu a{
-  margin-top: 10rem;
+margin-top: 10rem;
 }
 
 }
